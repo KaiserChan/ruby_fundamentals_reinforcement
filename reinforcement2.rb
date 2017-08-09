@@ -5,38 +5,31 @@ dramedy = "Taken"
 book = "'The subtle art of not giving a f*ck'"
 
 
+def user_input()
+  input = gets.chomp.to_i
+  if input > 5 || input < 1
+    puts "Error: Please rate on a scale from 1 (lowest) to 5 (highest)"
+    user_input
+  end
+  input
+end
+
 # documentaries rating ------
 puts "On a scale from 1 (lowest) to 5 (highest), how much do you appreciate documentaries?"
 
-documentary_input = gets.chomp.to_i
-
-while documentary_input > 5
-  puts "Error: Please rate on a scale from 1 (lowest) to 5 (highest)"
-  documentary_input = gets.chomp.to_i
-end
+documentary_input = user_input
 
 
 # dramas rating ------
 puts "On a scale from 1 (lowest) to 5 (highest), how much do you appreciate dramas?"
 
-drama_input = gets.chomp.to_i
-
-while drama_input > 5
-  puts "Error: Please rate on a scale from 1 (lowest) to 5 (highest)"
-  drama_input = gets.chomp.to_i
-end
+drama_input = user_input
 
 
 # comedies rating ------
 puts "On a scale from 1 (lowest) to 5 (highest), how much do you appreciate comedies?"
 
-comedy_input = gets.chomp.to_i
-
-while comedy_input > 5
-  puts "Error: Please rate on a scale from 1 (lowest) to 5 (highest)"
-  comedy_input = gets.chomp.to_i
-end
-
+comedy_input = user_input
 
 
 if documentary_input >= 4
