@@ -11,24 +11,20 @@ def user_input()
     puts "Error: Please rate on a scale from 1 (lowest) to 5 (highest)"
     user_input
   end
-  input
 end
 
 # documentaries rating ------
 puts "On a scale from 1 (lowest) to 5 (highest), how much do you appreciate documentaries?"
-
 documentary_input = user_input
 
 
 # dramas rating ------
 puts "On a scale from 1 (lowest) to 5 (highest), how much do you appreciate dramas?"
-
 drama_input = user_input
 
 
 # comedies rating ------
 puts "On a scale from 1 (lowest) to 5 (highest), how much do you appreciate comedies?"
-
 comedy_input = user_input
 
 
