@@ -6,11 +6,12 @@ book = "'The subtle art of not giving a f*ck'"
 
 
 def user_input()
-  input = gets.chomp.to_i
-  if input > 5 || input < 1
+  rating = gets.chomp.to_i
+  while rating > 5 || rating < 1
     puts "Error: Please rate on a scale from 1 (lowest) to 5 (highest)"
-    user_input
+    rating = gets.chomp.to_i
   end
+  rating
 end
 
 # documentaries rating ------
